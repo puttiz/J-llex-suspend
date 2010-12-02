@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>llex @jekyll</title>
+    <title>{{ page.title }}</title>
     <meta name="author" content="puttiz">
     <link rel="stylesheet" href="assets/c/site.css" media="screen">
     <link rel="stylesheet" href="assets/c/text.css" media="screen">
@@ -11,17 +11,9 @@
     <![endif]-->
   </head>
   
-  <body id="index">
+  <body id="{{ page.category }}">
     
-    <body id="index">
-  <h1 id="default">default view</h1>
-</body>
-
-===============
-<em>llex @jekyll</em>
-================
-
-
+    {{ content }}
     
   </body>
 </html>

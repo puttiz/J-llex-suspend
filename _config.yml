@@ -14,12 +14,12 @@ auto:        true
 permalink:   none
 exclude:     config tmp Gemfile Gemfile.lock
 # 
-maruku:
-  use_tex:    false
-  use_divs:   false
-  png_engine: blahtex
-  png_dir:    assets/images
-  png_url:    /assets/images
+# maruku:
+#   use_tex:    false
+#   use_divs:   false
+#   png_engine: blahtex
+#   png_dir:    assets/images
+#   png_url:    /assets/images
 # 
 # rdiscount:
 #   extensions: []
