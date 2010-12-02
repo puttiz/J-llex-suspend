@@ -1,6 +1,3 @@
-ROOT = File.dirname(__FILE__)
-require File.join(ROOT, "website")
+require File.join(File.dirname(__FILE__), "app")
 
-# require 'website'
-
-run Holley::Server
+run Cones::App
