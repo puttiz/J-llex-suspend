@@ -1,0 +1,7 @@
+---
+layout: default
+title: A new layout for this site
+category: notes
+summary:
+---
+This new layout for my personal site has been on the edge of being released for a while now. After making some final touches to the HTML5, I thought I could just publish it with none style today.

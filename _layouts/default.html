@@ -1,0 +1,30 @@
+---
+layout: layout
+style: default
+---
+
+    <link rel="stylesheet" href="/assets/c/960.css">
+    <link rel="stylesheet" href="/assets/c/style.css">
+    <link rel="stylesheet" href="/assets/c/color.css">
+    <link rel="stylesheet" href="/assets/c/{{ page.style }}.css">
+  </head>
+
+  <body>
+    <noscript>
+        <p><strong>This site really needs javascript. Seriously. You want javascript for this site.</strong></p>
+    </noscript>
+
+    <header>
+      <h1 id="llex"><a href="/">{{ site.title }}</a></h1>
+      <nav>
+        I likes to write <a href="/pages/article.html" class="n-article">articles</a> take <a href="/pages/notes.html" class="n-notes">notes</a> follow <a href="/pages/link.html" class="n-link">links</a> <a href="/pages/quote.html" class="n-quote">quote</a> people and <a href="/pages/natter.html" class="n-natter">natter</a> about things.
+      </nav>
+    </header>
+
+{{ content }}
+
+    <footer>
+      <nav>
+        I likes to write <a href="/pages/article.html" class="n-article">articles</a> take <a href="/pages/notes.html" class="n-notes">notes</a> follow <a href="/pages/link.html" class="n-link">links</a> <a href="/pages/quote.html" class="n-quote">quote</a> people and <a href="/pages/natter.html" class="n-natter">natter</a> about things.
+      </nav>
+    </footer>

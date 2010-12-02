@@ -1,0 +1,23 @@
+{% for post in site.categories.notes %}{% if  forloop.first %}<menu>
+      <h2>article</h2>
+      <ul>
+        <li>
+          <a href="{{ post.url }}">
+            <h2>{{ post.title }}</h2>
+            <span>{{ post.desc }}</span>
+          </a>
+        </li>{% elsif forloop.last %}
+        <li id="last">
+          <a href="{{ post.url }}">
+            <h2>{{ post.title }}</h2>
+            <span>{{ post.desc }}</span>
+          </a>
+        </li>
+      </ul>
+    </menu>{% else %}
+        <li>
+          <a href="{{ post.url }}">
+            <h2>{{ post.title }}</h2>
+            <span>{{ post.desc }}</span>
+          </a>
+        </li>{% endif %}{% endfor %}
