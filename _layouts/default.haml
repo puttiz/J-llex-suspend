@@ -1,0 +1,12 @@
+!!! 5
+%html
+  %head
+    %meta{charset: "utf-8"}
+    %title {{ site:title }}{% if  page.title %} ~ {{ page.title }}{% endif %}
+    %link{rel: "stylesheet", href: "/assets/c/style.css"}
+
+  %body
+    {{ content }}
+    %footer
+      %small © Puttiz
+    %script{src: "/assets/j/site.js"}

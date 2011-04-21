@@ -1,0 +1,22 @@
+:plain
+  ---
+  layout: default
+  title: index page
+  ---
+%header
+  %h3 Hi!
+  %hgroup
+    %h1 Welcome
+    %figure
+      %img{src: "/assets/i/me.jpg"}
+      %figcaption A smug looking...
+    %h2 I love minimal, functional design and development techniques, typography and all things web.
+
+%section#bio
+  %p blablabla, oooo, blablabla...
+
+%section#articles
+  %header
+    %h1
+      %span An archive of articles
+  {% include archives.html %}

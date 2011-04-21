@@ -1,7 +1,0 @@
----
-layout: default
-title: New start
-category: notes
-summary:
----
-*New start!*
