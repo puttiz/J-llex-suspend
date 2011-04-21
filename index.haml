@@ -3,6 +3,7 @@
   layout: default
   title: index page
   ---
+/ index
 %header
   %h3 Hi!
   %hgroup
@@ -20,3 +21,35 @@
     %h1
       %span An archive of articles
   {% include archives.html %}
+
+%section#meta
+  %header
+    %h1
+      %span Meta
+  %section#contact
+    %h1 Old school
+    %p
+      some common contact tools
+  %section#external
+    %h1 MRPG
+    %p
+      online game
+
+%section#feature
+  %header
+    %h1
+      .dot
+        %span Feature
+  %section#upcoming
+    %h1 Upcoming Feature
+    %article
+      %h1 Nothing scheduled
+      %p Speaking hiatus
+  %section#past
+    %h1 Past Events
+    {% for post in site.categories.feature %}
+    %article
+      %a{href: "{{ post.url }}", rel: "external"}
+        %h1 {{ post.title }}
+        %h2 {{ post.excerpt }}
+    {% endfor %}
