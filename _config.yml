@@ -1,8 +1,5 @@
 title: LLEX
 
-haml_folder: _layouts/**/*.haml
-sass_folder: **/*.sass
-
 # safe:        false
 # auto:        true
 # server:      false
@@ -17,7 +14,7 @@ sass_folder: **/*.sass
 # pygments:    false
 # markdown:    maruku
 permalink:   none
-exclude:     ["config", "tmp", "Gemfile", "Gemfile.lock", "Rakefile"]
+exclude:     ["config", "tmp", "Gemfile", "Gemfile.lock", "Rakefile", "index.haml"]
 #
 # maruku:
 #   use_tex:    false
