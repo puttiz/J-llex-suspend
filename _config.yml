@@ -1,5 +1,8 @@
 title: LLEX
 
+haml_folder: _layouts/**/*.haml
+sass_folder: **/*.sass
+
 # safe:        false
 # auto:        true
 # server:      false
@@ -15,24 +18,24 @@ title: LLEX
 # markdown:    maruku
 permalink:   none
 exclude:     ["config", "tmp", "Gemfile", "Gemfile.lock", "Rakefile"]
-# 
+#
 # maruku:
 #   use_tex:    false
 #   use_divs:   false
 #   png_engine: blahtex
 #   png_dir:    assets/images
 #   png_url:    /assets/images
-# 
+#
 # rdiscount:
 #   extensions: []
-# 
+#
 # kramdown:
 #   auto_ids: true,
 #   footnote_nr: 1
 #   entity_output: as_char
 #   toc_levels: 1..6
 #   use_coderay: false
-#   
+#
 #   coderay:
 #     coderay_wrap: div
 #     coderay_line_numbers: inline
