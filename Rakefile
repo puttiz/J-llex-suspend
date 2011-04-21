@@ -10,7 +10,7 @@ end
 
 desc "Build site with Jekyll-ext"
 task :ebuild do
-  ejekyll
+  jekyll "--auto"
 end
 
 desc "Build and start server with --auto"
@@ -26,9 +26,4 @@ end
 def jekyll(opts = "")
   sh "rm -rf _site"
   sh "jekyll " + opts
-end
-
-def ejekyll(opts = "")
-  sh "rm -rf _site"
-  sh "ejekyll " + opts
 end
