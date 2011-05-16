@@ -5,7 +5,7 @@
     %title {% if  page.title %}{{ page.title }} ~ {% endif %}{{ site:title }}
     %link{rel: "stylesheet", href: "/assets/c/style.css"}
 
-  %body{id: "{{ post.category }}"}
+  %body#article{class: "{{ page.category }}{% if page.style %} {{ page.style }}{% endif %}"}
     %article
       %a#home{href: "/"} Home
       %header
