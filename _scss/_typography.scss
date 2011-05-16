@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'AlteHaasGrotesk';
+  src: url('/fonts/altehaasgroteskbold-webfont.eot');
+  src: local('☺'),
+    url('/fonts/embed/altehaasgroteskbold-webfont.woff') format('woff'),
+    url('/fonts/embed/altehaasgroteskbold-webfont.ttf') format('truetype'),
+    url('/fonts/embed/altehaasgroteskbold-webfont.svg#webfontaU8b4LrX') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@mixin primary_header {
+  font-family: 'AlteHaasGrotesk', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #4D4D4D;
+  line-height: 1em;
+  font-size: 7em;
+}
+
+@mixin secondry_header {
+  font-family: Palatino, "Palatino Linotype", Book Antiqua, serif;
+  font-size: 2.40em;
+  color: #4D4D4D;
+
+  .fontsmoothing & { color: #333; }
+}
+
+@mixin thirdly_header {
+  font-family: Palatino, "Palatino Linotype", Book Antiqua, serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.3em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid #ccc;
+  display: inline;
+  color: #4D4D4D;
+}
+
+@mixin body_copy {
+  font-family: Palatino, "Palatino Linotype", Book Antiqua, serif;
+  font-size: 1.5em;
+  width: 33em;
+  color: #444;
+
+  a {
+    display: inline;
+    text-decoration: none;
+    padding-bottom: 0.1em;
+    border-bottom: 1px solid #ccc;
+    -webkit-transition-property: border;
+    -webkit-transition-duration: 250ms;
+    -webkit-transition-timing-function: ease-in;
+
+    &:hover { color: #303030; border-bottom: 1px solid #9C9C9C }
+  }
+}

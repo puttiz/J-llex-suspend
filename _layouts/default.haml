@@ -5,7 +5,7 @@
     %title {% if  page.title %}{{ page.title }} ~ {% endif %}{{ site:title }}
     %link{rel: "stylesheet", href: "/assets/c/style.css"}
 
-  %body
+  %body{id: "{{ page.style }}"}
     {{ content }}
     %footer
       %small © Puttiz
